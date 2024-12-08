@@ -1,0 +1,166 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;  /* استخدام خط عربي جميل */
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #3a7bd5, #3a6073);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn {
+    background: #fff;
+    color: #3a7bd5;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-section .btn:hover {
+    background: #3a6073;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+/* About Section */
+.about-section {
+    background: #f9f9f9;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #3a7bd5;
+}
+
+.about-section p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* Services Section */
+.services-section {
+    background: #fff;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #3a7bd5;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background: #f1f1f1;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+    color: #3a7bd5;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background: #3a7bd5;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #f1f1f1;
+    transition: color 0.3s;
+}
+/* For screens smaller than 768px (Tablets and Phones) */
+@media screen and (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem; /* تقليص حجم النص */
+    }
+
+    .services {
+        flex-direction: column; /* جعل العناصر عمودية */
+        gap: 1rem;
+    }
+
+    .service-card {
+        width: 100%; /* جعل بطاقات الخدمات تأخذ العرض الكامل */
+    }
+
+    .footer p {
+        font-size: 0.8rem; /* تقليص حجم النص في الفوتر */
+    }
+
+    .btn {
+        padding: 0.6rem 1.2rem; /* تقليص حجم الزر */
+    }
+}
+
+/* For screens smaller than 480px (Mobile phones) */
+@media screen and (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 1.5rem; /* تقليص حجم النص بشكل أكبر */
+    }
+
+    .hero-section p {
+        font-size: 1rem; /* تقليص حجم الفقرات */
+    }
+
+    .service-card {
+        padding: 1.5rem; /* تقليص حجم الحشو */
+    }
+}
